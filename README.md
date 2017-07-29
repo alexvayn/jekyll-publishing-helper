@@ -1,7 +1,7 @@
 # Jekyll GitHub Pages Setup Script
 
 ## What is this script and why do I need it?
-The purpose of this script is to simplify and automate the one-time setup of your [Jekyll](https://jekyllrb.com/) project with [https://pages.github.com/](GitHub Pages).
+The purpose of this script is to simplify and automate the one-time setup of your [Jekyll](https://jekyllrb.com/) project with [GitHub Pages](https://pages.github.com/).
 
 By default, when you run a Jekyll build, it generates the static assets in the folder `_site`. In order to publish these assets as a GitHub page, you'll need to set up a separate GitHub repo and copy all the contents of this folder into the root of that project. Then, you'll still need to enable GitHub pages.
 
