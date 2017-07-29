@@ -6,13 +6,14 @@
 
 GITHUB_USER=alexvayn
 GITHUB_PROJECT=jekyll-playground
-GITHUB_REPO=https://github.com/$GITHUB_USER/$GITHUB_PROJECT.git
+PROJECT_HOME=/Users/avaynshteyn/projects/play/
 
-# Make sure this folder does NOT exist before running this script
-STATIC_GEN_PATH=/Users/avaynshteyn/projects/play/static-generated
-MASTER_REPO_PATH=/Users/avaynshteyn/projects/play/$GITHUB_PROJECT
+GITHUB_REPO=https://github.com/$GITHUB_USER/$GITHUB_PROJECT.git
+STATIC_GEN_PATH=$PROJECT_HOME/static-generated
+MASTER_REPO_PATH=$PROJECT_HOME/$GITHUB_PROJECT
 
 # Create symlink from _site folder to the static generated location
+mkdir -p $STATIC_GEN_PATH
 ln -s $MASTER_REPO_PATH/_site $STATIC_GEN_PATH/$GITHUB_PROJECT
 
 pushd $STATIC_GEN_PATH/$GITHUB_PROJECT
