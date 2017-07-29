@@ -15,6 +15,8 @@ MASTER_REPO_PATH=/Users/avaynshteyn/projects/play/$GITHUB_PROJECT
 # Create symlink from _site folder to the static generated location
 ln -s $MASTER_REPO_PATH/_site $STATIC_GEN_PATH/$GITHUB_PROJECT
 
+pushd $STATIC_GEN_PATH/$GITHUB_PROJECT
+
 # Initialize this directory as a separate repo
 git init
 git remote add origin $GITHUB_REPO
@@ -23,3 +25,5 @@ git add .
 git status
 git commit -m "initialzed static files"
 git push --set-upstream origin gh-pages
+
+popd
