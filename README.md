@@ -23,8 +23,8 @@ This script (`setup.sh`) lets you avoid having to maintain two separate projects
     * If your page doesn't look right, check the [Common Pitfalls](#pitfalls) section of this page
 
 ## Making updates to your site
-* All your generated content will be located in `$PROJECT_HOME/static-generated/$GITHUB_PROJECT`
-* Each time you re-run a jekyll build, navigate to this folder, commit and push to the `gh-pages` branch
+* When you're ready to publish new changes, run the publishing script as follows: `./publish.sh GITHUB_PROJECT`
+* This will re-run a build on your Jekyll project and comit all the generated static content to the `gh-pages` branch
 
 ## <a name="pitfalls"></a> Common Pitfalls
 * If your CSS doesn't load properly, update the following line in your Jekyll project's `config.yml` to match your project name:
