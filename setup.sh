@@ -4,9 +4,10 @@
 # 1) GitHub repo exists and only has a master branch
 # 2) jekyll build has been run on the master repo
 
-GITHUB_USER=alexvayn
-GITHUB_PROJECT=j-poc
-PROJECT_HOME=/Users/avaynshteyn/projects/play/
+# Add these environment variables to your .bash_profile. Modify them to match your system.
+#GITHUB_USER=alexvayn
+#GITHUB_PROJECT=the-mixing-touch
+#PROJECT_HOME=/Users/alexvayn/projects/
 
 GITHUB_REPO=https://github.com/$GITHUB_USER/$GITHUB_PROJECT.git
 STATIC_GEN_PATH=$PROJECT_HOME/static-generated
