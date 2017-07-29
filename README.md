@@ -7,3 +7,7 @@
     * GITHUB_PROJECT - the name of the project that holds the master Jekyll source and configs
     * PROJECT_HOME - the directory where you normally keep your GitHub projects
 * Run the script as follows: `./setup.sh`
+
+# Note
+* If your CSS doesn't load properly, update the following line in your Jekyll project's `config.yml` to match your project name:
+  * ```baseurl: "your-project-name"```

@@ -5,7 +5,7 @@
 # 2) jekyll build has been run on the master repo
 
 GITHUB_USER=alexvayn
-GITHUB_PROJECT=jekyll-playground
+GITHUB_PROJECT=j-poc
 PROJECT_HOME=/Users/avaynshteyn/projects/play/
 
 GITHUB_REPO=https://github.com/$GITHUB_USER/$GITHUB_PROJECT.git
