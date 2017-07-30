@@ -7,7 +7,7 @@ By default, when you run a Jekyll build, it generates the static assets in the f
 
 This script (`setup.sh`) lets you avoid having to maintain two separate projects by taking advantage of branching. After running this script, you'll have all your source Jekyll files and configs in the `master` branch and all your generated content in your `gh-pages` branch. As an added bonus, GitHub by design  recognizes this special branch and automatically publishes your page, without having to go to the repo's settings.
 
-Or you can skip all this and try the much [simpler approach](#simpler) on the bottom of this page.
+Or you can skip all this and try the [much simpler approach](#simpler) on the bottom of this page.
 
 ## Before you begin
 * You'll need a GitHub account. Make sure you're able to authenticate with your user ID from the command line
@@ -32,7 +32,7 @@ Or you can skip all this and try the much [simpler approach](#simpler) on the bo
 * If your CSS doesn't load properly, update the following line in your Jekyll project's `config.yml` to match your project name:
   * ```baseurl: "your-project-name"```
 
-## <a name="simpler"></a>Another (Simpler) Option
-* **Update** There's actually a much simpler way of doing this! Just specify the /docs folder as your build output
+## <a name="simpler"></a>A Simpler Approach
+* **Update!** There's actually a much simpler way of doing this! Just specify the /docs folder as your build output
     * ```jekyll build --destination ./docs```
     * After you do this, go to the project settings in GitHub and enable GitHub Pages using the /docs folder.
