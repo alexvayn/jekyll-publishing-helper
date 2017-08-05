@@ -1,11 +1,9 @@
 # Jekyll GitHub Pages Setup Script
 
 ## What is this script and why do I need it?
-The purpose of this script is to simplify and automate the one-time setup of your [Jekyll](https://jekyllrb.com/) project with [GitHub Pages](https://pages.github.com/).
+The purpose of these scripts is mainly for reference and to demonstrate how you can set up of your [Jekyll](https://jekyllrb.com/) project with the generated static files needed for [GitHub Pages](https://pages.github.com/) in a separate branch.
 
-By default, when you run a Jekyll build, it generates the static assets in the folder `_site`. In order to publish these assets as a GitHub page, you'll need to set up a separate GitHub repo and copy all the contents of this folder into the root of that project. Then, you'll still need to enable GitHub pages.
-
-This script (`setup.sh`) lets you avoid having to maintain two separate projects by taking advantage of branching. After running this script, you'll have all your source Jekyll files and configs in the `master` branch and all your generated content in your `gh-pages` branch. As an added bonus, GitHub by design  recognizes this special branch and automatically publishes your page, without having to go to the repo's settings.
+This script (`setup.sh`) takes advantage of a special branch that GitHub recognizes. After running this script, you'll have all your source Jekyll files and configs in the `master` branch of your repo and all your generated content in the `gh-pages` branch. GitHub recognizes this branch and automatically publishes your page, without having to enable it in the repo's settings.
 
 Or you can skip all this and try the [much simpler approach](#simpler) on the bottom of this page.
 
