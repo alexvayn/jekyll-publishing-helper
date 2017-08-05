@@ -3,8 +3,9 @@
 ## What is this script and why do I need it?
 The purpose of these scripts is mainly for reference and to demonstrate how you can set up of your [Jekyll](https://jekyllrb.com/) project with the generated static files needed for [GitHub Pages](https://pages.github.com/) in a separate branch.
 
-### Note
-* In most cases, you're probably better off with the [much simpler approach](https://github.com/alexvayn/jekyll-setup-gh-pages/tree/master/docs-generated).
+---
+**Note:** In most cases, you're probably better off with the [much simpler approach](../docs-generated).
+---
 
 This script (`setup.sh`) takes advantage of a special branch that GitHub recognizes. After running this script, you'll have all your source Jekyll files and configs in the `master` branch of your repo and all your generated content in the `gh-pages` branch. GitHub recognizes this branch and automatically publishes your page, without having to enable it in the repo's settings.
 
@@ -24,9 +25,9 @@ This script (`setup.sh`) takes advantage of a special branch that GitHub recogni
 * That's it! You should now be able to access your GitHub page at `https://GITHUB_USER.github.io/GITHUB_PROJECT/`
     * If your page doesn't look right, check the [Common Pitfalls](#pitfalls) section of this page
 
-## Making updates to your site
+## Publishing updates to your site
 * When you're ready to publish new changes, run the publishing script as follows: `./publish.sh GITHUB_PROJECT`
-* This will re-run a build on your Jekyll project and comit all the generated static content to the `gh-pages` branch
+* This will re-run a build on your Jekyll project and commit all the generated static content to the `gh-pages` branch
 
 ## <a name="pitfalls"></a> Common Pitfalls
 * If your CSS doesn't load properly, update the following line in your Jekyll project's `config.yml` to match your project name:

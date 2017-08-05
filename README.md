@@ -21,3 +21,14 @@ This is almost the same thing as above, but you generate your static content int
 ### [Source files in Master branch, generated content in `gh-pages` branch](./branch-generated)
 
 This was mostly an experimental set of scripts that I put together before I realized that GitHub automatically generates the Pages from you Jekyll project. It's an overthought approach, but it does work and I've keep these scripts for reference.
+
+## Jekyll starting projects with customized themes
+
+If you want a couple of good base Jekyll projects with customized themes to get you started, these are my go-to ones:
+* https://github.com/daviddarnes/alembic.git
+* https://github.com/alexvayn/rabbit-hole
+
+To get started with these, do the following:
+* `git clone [PROJECT_NAME]`
+* `jekyll build`
+* `jekyll serve`
