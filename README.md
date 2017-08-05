@@ -12,9 +12,11 @@ Your Jekyll Setup and publishing workflow will largely depend on where you're pl
 
 ### Source files in Master Branch
 
-If all you're planning to do is publish your site to GitHub pages, this is by far the simplest approach.
+If all you're planning to do is publish your site to GitHub pages, this is by far the simplest approach. Just commit your Jekyll project to the master branch of your GitHub repo and enable GitHub Pages:
+* In GitHub, go to the repo settings -> GitHub Pages -> Source -> select "master branch"
 
-### Source files in Master branch, generated content in `/docs` folder
+
+### [Source files in Master branch, generated content in `/docs` folder](./docs-generated)
 
 This is almost the same thing as above, but you generate your static content into the `/docs` folder using the `--destination` option.
 
