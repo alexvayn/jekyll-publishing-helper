@@ -29,8 +29,3 @@ Or you can skip all this and try the [much simpler approach](#simpler) on the bo
 ## <a name="pitfalls"></a> Common Pitfalls
 * If your CSS doesn't load properly, update the following line in your Jekyll project's `config.yml` to match your project name:
   * ```baseurl: "your-project-name"```
-
-## <a name="simpler"></a>A Simpler Approach
-* **Update!** There's actually a much simpler way of doing this! Just specify the /docs folder as your build output
-    * ```jekyll build --destination ./docs```
-    * After you do this, go to the project settings in GitHub and enable GitHub Pages using the /docs folder.
