@@ -13,15 +13,18 @@ This approach is a good one if you want to commit both the Jekyll source files a
     * ```jekyll build --destination ./docs```
 * Commit the newly generated docs folder to GitHub
 * In GitHub, go to the repo settings -> GitHub Pages -> Source -> select "master branch /docs folder"
-* If you're publish to AWS S3, install the [AWS CLI](http://docs.aws.amazon.com/cli/latest/userguide/installing.html) and [set up your AWS Access Keys](http://docs.aws.amazon.com/cli/latest/userguide/cli-chap-getting-started.html#cli-quick-configuration) on your machine
-* Open the `env_vars.sh` and update the variables to match your system:
-    * `PROJECT_HOME` - the directory where you keep your GitHub projects, with a trailing forward slash (e.g., `/Users/alexvayn/projects/`)
+* If you're publishing to AWS S3, install the [AWS CLI](http://docs.aws.amazon.com/cli/latest/userguide/installing.html) and [set up your AWS Access Keys](http://docs.aws.amazon.com/cli/latest/userguide/cli-chap-getting-started.html#cli-quick-configuration) on your machine
 
 ## Publishing updates to your site
-* Export these environment variables in your `.bash_profile` and be sure to reload it:
-    * `export GITHUB_USER` - your GitHub user ID (e.g., `alexvayn`)
-    * `export PROJECT_HOME` - the directory where you keep your GitHub projects with a trailing forward slash (e.g., `/Users/alexvayn/projects/`)
 * Run the `publish.sh` script as follows:
-    * `./publish.sh PROJECT_NAME --github --s3`
-        * specify `github` if you want to publish to GitHub pages
-        * specify `s3` if you want to publish to AWS S3
+    * `./publish.sh -p [PROJECT_PATH] [OPTIONS]`
+    * OPTIONS:
+        * -?                  - show this usage info
+        * -s [BUCKET_NAME]    - causes the project to be published to the specified AWS s3
+        * -g                  - causes the project will be published to GitHub Pages
+        * -j                  - Jekyll build will be performed prior to publishing
+        * -h                  - Hugo build will be performed prior to publishing
+    * EXAMPLES:
+        * Run a Jekyll Build and Publish to S3: `publish.sh -p ~/my-project -s MyS3Bucket`
+        * Run a Jekyll Build and Publish to GitHub Pages: `publish.sh -p ~/my-project -g`
+        * Run a Hugo Build and to Publish GithHub Pages and S3: `publish.sh -p ~/my-project -g -s MyS3Bucket`

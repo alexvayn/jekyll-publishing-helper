@@ -4,7 +4,7 @@ set -e
 function show_usage()
 {
         echo ""
-        echo "Usage: setup.sh -p [PROJECT_PATH] [OPTIONS]
+        echo "Usage: publish.sh -p [PROJECT_PATH] [OPTIONS]
     PROJECT_PATH:
         (Required) the full path of the project to be published
     OPTIONS:
