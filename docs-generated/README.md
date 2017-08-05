@@ -18,13 +18,14 @@ This approach is a good one if you want to commit both the Jekyll source files a
 ## Publishing updates to your site
 * Run the `publish.sh` script as follows:
     * `./publish.sh -p [PROJECT_PATH] [OPTIONS]`
-    * OPTIONS:
-        * -?                  - show this usage info
-        * -s [BUCKET_NAME]    - causes the project to be published to the specified AWS s3
-        * -g                  - causes the project will be published to GitHub Pages
-        * -j                  - Jekyll build will be performed prior to publishing
-        * -h                  - Hugo build will be performed prior to publishing
-    * EXAMPLES:
-        * Run a Jekyll Build and Publish to S3: `publish.sh -p ~/my-project -s MyS3Bucket`
-        * Run a Jekyll Build and Publish to GitHub Pages: `publish.sh -p ~/my-project -g`
-        * Run a Hugo Build and to Publish GithHub Pages and S3: `publish.sh -p ~/my-project -g -s MyS3Bucket`
+    * `[PROJECT_PATH]` - the full path to the project you want to publish (Tilde ~ shortcut supported)
+    * `OPTIONS`:
+        * `-?`                  - show this usage info
+        * `-s [BUCKET_NAME]`    - causes the project to be published to the specified AWS s3
+        * `-g`                  - causes the project will be published to GitHub Pages
+        * `-j`                  - Jekyll build will be performed prior to publishing
+        * `-h`                  - Hugo build will be performed prior to publishing
+    * Examples:
+        * Run a Jekyll Build and Publish to S3: `publish.sh -p ~/my-project -j -s MyS3Bucket`
+        * Run a Jekyll Build and Publish to GitHub Pages: `publish.sh -p ~/my-project -j -g`
+        * Run a Hugo Build and Publish to GithHub Pages and S3: `publish.sh -p ~/my-project -h -g -s MyS3Bucket`
