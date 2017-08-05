@@ -3,9 +3,11 @@
 ## What is this script and why do I need it?
 The purpose of these scripts is mainly for reference and to demonstrate how you can set up of your [Jekyll](https://jekyllrb.com/) project with the generated static files needed for [GitHub Pages](https://pages.github.com/) in a separate branch.
 
+### Note
+* In most cases, you're probably better off with the [much simpler approach](https://github.com/alexvayn/jekyll-setup-gh-pages/tree/master/docs-generated).
+
 This script (`setup.sh`) takes advantage of a special branch that GitHub recognizes. After running this script, you'll have all your source Jekyll files and configs in the `master` branch of your repo and all your generated content in the `gh-pages` branch. GitHub recognizes this branch and automatically publishes your page, without having to enable it in the repo's settings.
 
-Or you can skip all this and try the [much simpler approach](#simpler) on the bottom of this page.
 
 ## Before you begin
 * You'll need a GitHub account. Make sure you're able to authenticate with your user ID from the command line
