@@ -17,11 +17,13 @@ If all you're planning to do is publish your site to GitHub pages, this is by fa
 
 ### [Source files in Master branch, generated content in `/docs` folder](./docs-generated)
 
-This is almost the same thing as above, but you generate your static content into the `/docs` folder using the `--destination` option.
+This is almost the same thing as above, but you generate your static content into the `/docs` folder using the `--destination` option. Here you'll find a useful script to help you quickly publish your updates to GitHub Pages and/or AWS S3.
 
-### [Source files in Master branch, generated content in `gh-pages` branch](./branch-generated)
+### Source files in Master branch, generated content in `gh-pages` branch
 
 This was mostly an experimental set of scripts that I put together before I realized that GitHub automatically generates the Pages from you Jekyll project. It's an overthought approach, but it does work and I've keep these scripts for reference.
+
+If you're interested in going down this route, you can check it out [here](./branch-generated).
 
 ## Jekyll starting projects with customized themes
 
