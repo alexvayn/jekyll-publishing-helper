@@ -23,8 +23,8 @@ You'll be able to save a ton of time by not having to run a lot of manual comman
     * `[PROJECT_PATH]` - the full path to the project you want to publish (Tilde ~ shortcut supported)
     * `OPTIONS`:
         * `-?`                  - show this usage info
-        * `-s [BUCKET_NAME]`    - causes the project to be published to the specified AWS s3
-        * `-g`                  - causes the project will be published to GitHub Pages
+        * `-s [BUCKET_NAME]`    - causes the generated content from the `docs` folder to be published to the specified AWS S3 bucket
+        * `-g`                  - causes the project to be published to GitHub Pages
         * `-j`                  - Jekyll build will be performed prior to publishing
         * `-h`                  - Hugo build will be performed prior to publishing
     * Examples:
