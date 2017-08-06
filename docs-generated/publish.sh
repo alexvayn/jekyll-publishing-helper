@@ -4,7 +4,7 @@ set -e
 function show_usage()
 {
         echo ""
-        echo "Usage: publish.sh -p [PROJECT_PATH] [OPTIONS]
+        echo "Usage: ./publish.sh -p [PROJECT_PATH] [OPTIONS]
     PROJECT_PATH:
         (Required) the full path of the project to be published
     OPTIONS:
@@ -14,7 +14,7 @@ function show_usage()
       -j                  - Jekyll build will be performed prior to publishing
       -h                  - Hugo build will be performed prior to publishing
     EXAMPLES:
-        publish.sh -p /Users/myuser/my-project -g -h -s MyS3Bucket
+        ./publish.sh -p /Users/myuser/my-project -g -h -s MyS3Bucket
     "
 }
 

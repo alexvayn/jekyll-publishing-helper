@@ -28,7 +28,7 @@ You'll be able to save a ton of time by not having to run a lot of manual comman
         * `-j`                  - Jekyll build will be performed prior to publishing
         * `-h`                  - Hugo build will be performed prior to publishing
     * Examples:
-        * Run a Jekyll Build and Publish to S3: `publish.sh -p ~/my-project -j -s MyS3Bucket`
-        * Run a Jekyll Build and Publish to GitHub Pages: `publish.sh -p ~/my-project -j -g`
-        * Run a Hugo Build and Publish to GithHub Pages and S3: `publish.sh -p ~/my-project -h -g -s MyS3Bucket`
-    * Note: the order of the options does not matter, as long as you keep the key-value ones together. For example, `publish.sh -p ~/my-project -j -s MyS3Bucket` and `publish.sh -j -s MyS3Bucket -p ~/my-project` are identical.
+        * Run a Jekyll Build and Publish to S3: `./publish.sh -p ~/my-project -j -s MyS3Bucket`
+        * Run a Jekyll Build and Publish to GitHub Pages: `./publish.sh -p ~/my-project -j -g`
+        * Run a Hugo Build and Publish to GithHub Pages and S3: `./publish.sh -p ~/my-project -h -g -s MyS3Bucket`
+    * Note: the order of the options does not matter, as long as you keep the key-value ones together. For example, `./publish.sh -p ~/my-project -j -s MyS3Bucket` and `./publish.sh -j -s MyS3Bucket -p ~/my-project` are identical.
